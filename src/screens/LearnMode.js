@@ -1,19 +1,25 @@
+import React, {useState} from 'react';
 import {useNavigate} from 'react-router-dom';
+import Start from './Start';
+import { Button } from '@chakra-ui/react';
 
 function LearnMode() {
 
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
-    // const [signupClick, setSignupClick] = useState();
+    const [doneClick, setDoneClick] = useState();
 
-    // const handleClickDashboard = (e) => {
-    //     navigate('/signup');
-    // }
+    const handleClickDone = (e) => {
+        navigate('/mode');
+    }
 
     return (
         <>
         <p> Learn </p>
-        {/* <button> Sign Up</button> */}
+        <Start/>
+        
+
+        <Button onClick={handleClickDone}> Done</Button>
         </>
     );
 }

@@ -1,4 +1,7 @@
+import React, {useState} from 'react';
 import {useNavigate} from 'react-router-dom';
+import { Button } from '@chakra-ui/react';
+
 
 function Start() {
 
@@ -13,7 +16,7 @@ function Start() {
     return (
         <>
         <p> Start </p>
-        {/* <button> Sign Up</button> */}
+        <Button> Play </Button>
         </>
     );
 }

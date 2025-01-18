@@ -10,7 +10,7 @@ function Signup() {
     const [createAccountClick, setCreateAccountClick] = useState();
 
     const handleClickCreateAccount = (e) => {
-        navigate('/start');
+        navigate('/tutorial');
     }
 
     return (

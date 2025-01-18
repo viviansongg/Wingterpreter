@@ -1,19 +1,21 @@
+import React, {useState} from 'react';
 import {useNavigate} from 'react-router-dom';
+import { Button } from '@chakra-ui/react';
 
 function Stats() {
 
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
-    // const [signupClick, setSignupClick] = useState();
+    const [backClick, setBackClick] = useState();
 
-    // const handleClickDashboard = (e) => {
-    //     navigate('/signup');
-    // }
+    const handleClickBack = (e) => {
+        navigate('/mode');
+    }
 
     return (
         <>
         <p> Stats </p>
-        {/* <button> Sign Up</button> */}
+        <Button onClick={handleClickBack}>Back</Button>
         </>
     );
 }

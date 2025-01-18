@@ -1,19 +1,25 @@
+import React, {useState} from 'react';
 import {useNavigate} from 'react-router-dom';
+import Start from './Start';
+import { Button } from '@chakra-ui/react';
+
 
 function GameMode() {
 
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
-    // const [signupClick, setSignupClick] = useState();
+    const [gameoverClick, setGameoverClick] = useState();
 
-    // const handleClickDashboard = (e) => {
-    //     navigate('/signup');
-    // }
+    const handleClickGameover = (e) => {
+        navigate('/mode');
+    }
 
     return (
         <>
         <p> Game Mode </p>
-        {/* <button> Sign Up</button> */}
+        
+        <Start/>
+        <Button onClick={handleClickGameover}>Game Over</Button>
         </>
     );
 }

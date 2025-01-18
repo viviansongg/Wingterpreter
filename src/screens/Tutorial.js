@@ -1,19 +1,22 @@
+import React, {useState} from 'react';
 import {useNavigate} from 'react-router-dom';
+import { Button } from '@chakra-ui/react';
+
 
 function Tutorial() {
 
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
-    // const [signupClick, setSignupClick] = useState();
+    const [skipClick, setSkipClick] = useState();
 
-    // const handleClickDashboard = (e) => {
-    //     navigate('/signup');
-    // }
+    const handleClickSkip = (e) => {
+        navigate('/mode');
+    }
 
     return (
         <>
         <p> Tutorial </p>
-        {/* <button> Sign Up</button> */}
+        <Button onClick={handleClickSkip}> Skip </Button>
         </>
     );
 }

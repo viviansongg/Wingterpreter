@@ -17,7 +17,7 @@ function Login() {
     }
 
     const handleClickLogin = (e) => {
-        navigate('/start');
+        navigate('/tutorial');
     }
 
 
