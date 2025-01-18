@@ -12,6 +12,8 @@ import GameMode from './screens/GameMode.js';
 import Stats from './screens/Stats.js';
 import GameOver from './screens/GameOver.js';
 import { Provider } from './components/ui/provider.jsx';
+import LoginButton from './components/LoginButton.js';
+import LogoutButton from './components/LogoutButton.js';
 
 function App() {
   return (
@@ -31,65 +33,14 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-    <Provider>
-      {/* <Component {...pageProps} /> */}
-      <Router>
-        {/* <Taskbar /> */}
-        <Routes>
-          <Route path="/" element={
-            <>
-              <Login />
-            </>
-          }/>
-          <Route path="/signup" element={
-            <>
-              <Signup />
-            {/* <div className='snipeitTableDiv'>
-              <VerticalLayout style={{ justifyContent: 'center' }}>
-                <Toggle/>
-                <SnipeitTablePage />
-              </VerticalLayout>
-            </div> */}
-            </>
-          }/>
-          <Route path="/tutorial" element={
-            <>
-              <Tutorial />
-            </>
-          }/>
-          <Route path="/mode" element={
-            <>
-              <Mode />
-            </>
-          }/>
-          <Route path="/start" element={
-            <>
-              <Start />
-            </>
-          }/>
-          <Route path="/learnmode" element={
-            <>
-              <LearnMode />
-            </>
-          }/>
-          <Route path="/gamemode" element={
-            <>
-              <GameMode />
-            </>
-          }/>
-          <Route path="/stats" element={
-            <>
-              <Stats />
-            </>
-          }/>
-          <Route path="/gameover" element={
-            <>
-              <GameOver />
-            </>
-          }/>
-        </Routes>
-      </Router>
-    </Provider>
+    // <>
+    <main className='column'>
+      <h1> Auth0 Login</h1>
+      <LoginButton/>
+      <LogoutButton/>
+    </main>
+   
+    // </>
   );
 }
 
