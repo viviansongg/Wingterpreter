@@ -12,8 +12,17 @@ Wingterpreter is an interactive game that helps users practice American Sign Lan
 
 # Tech Stack
 
+### Front-end
+- HTML/CSS/JavaScript
+- React
+- Tailwindcss
+- Chakra UI
+
+### Back-end
 - Python – Core game and machine learning logic
-- HTML, CSS, JavaScript, React, Tailwindcss, Chakra UI, Auth0
+- Huggingface (for the model)
+- Roboflow(data annotation)
+- Google Colab/Local CPU (Training Model)
  
 # How It Works
 
@@ -24,3 +33,7 @@ Wingterpreter is an interactive game that helps users practice American Sign Lan
 5. If correct, the bird moves in the intended direction; if incorrect, the bird stays in place.
 
 # Future Improvements
+
+- 🎭 Support for dynamic ASL words and phrases
+- 🏆 Scoring system to track progress
+- 🖥️ Web-based or mobile app version for wider accessibility
