@@ -180,3 +180,42 @@ code {
   flex-shrink: 0;
   margin-bottom: 20px;
 }
+
+.game-div {
+  position: absolute;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  background-color: #9B9797;
+  top: calc(56 / 1080 * 100vh);
+  left: calc(57.5 / 1920 * 100vw);
+  width: calc(1805/1920*100vw);
+  height: calc(514/1080*100vh);
+  flex-shrink: 0;
+}
+
+.alpha-div {
+  position: absolute;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  background-color: #9B9797;
+  top: calc(619 / 1080 * 100vh);
+  left: calc(57.5 / 1920 * 100vw);
+  width: calc(713/1920*100vw);
+  height: calc(408/1080*100vh);
+  flex-shrink: 0;
+}
+
+.screen-div {
+  position: absolute;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  background-color: #9B9797;
+  top: calc(619 / 1080 * 100vh);
+  left: calc(825 / 1920 * 100vw);
+  width: calc(1038/1920*100vw);
+  height: calc(408/1080*100vh);
+  flex-shrink: 0;
+}

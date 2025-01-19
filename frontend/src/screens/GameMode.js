@@ -4,6 +4,7 @@ import Start from './Start';
 import { Button } from '@chakra-ui/react';
 import { Heart, HeartBreak } from '@phosphor-icons/react';
 import { HStack } from '@chakra-ui/react';
+import logo from '../images/logo.png'
 
 function GameMode() {
 
@@ -36,24 +37,24 @@ function GameMode() {
 
     return (
         <>
-        <p> Game Mode </p>
-        <p> {count} </p>
-        {/* <p> {heart1 ? 'true' : 'false'} </p> */}
-        {/* <p> {heart2} </p> */}
-        <HStack>
-            {/* {heart1 ? <Heart size={32} color='red' weight='fill'/> : <HeartBreak size={32}/>}
-            {heart2 ? <Heart size={32} color='red' weight='fill'/> : <HeartBreak size={32}/>}
-            {heart3 ? <Heart size={32} color='red' weight='fill'/> : <HeartBreak size={32}/>} */}
+        <div className='plainbg'></div>
+        <div className='game-div'></div>
+        <div className='alpha-div'></div>
+        <div className='screen-div'></div>
+
+        {/* <p> Game Mode </p> */}
+        {/* <p> {count} </p> */}
+        {/* <HStack>
             {count < 1 ? <Heart size={32} color='red' weight='fill'/> : <HeartBreak size={32}/>}
             {count < 2 ? <Heart size={32} color='red' weight='fill'/> : <HeartBreak size={32}/>}
             {count < 3 ? <Heart size={32} color='red' weight='fill'/> : <HeartBreak size={32}/>}
-
-        </HStack>
+        </HStack> */}
         
-        <Start/>
-        <Button onClick={handleClickGameover}>Game Over</Button>
-        <Button onClick={handleClickKill}>Kill</Button>
+        {/* <Start/> */}
+        <img className='corner-logo' src={logo} alt=''></img>
 
+        <Button onClick={handleClickGameover}>Game Over</Button>
+        {/* <Button onClick={handleClickKill}>Kill</Button> */}
         </>
     );
 }
