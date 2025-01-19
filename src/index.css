@@ -57,3 +57,11 @@ code {
   font-weight: 400;
   line-height: normal;
 }
+
+.underline {
+  stroke-width: 3px;
+  stroke: #000;
+  width: 499.5px;
+  height: 0px;
+  flex-shrink: 0;
+}

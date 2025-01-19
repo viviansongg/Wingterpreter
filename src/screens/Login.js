@@ -80,10 +80,12 @@ function Login() {
                     <img src='' alt='' />
                     <input type='username' placeholder='username' onChange={handleClickUsername}/>
                 </div>
+                <hr className='underline'/>
                 <div className='input'>
                     <img src='' alt='' />
                     <input type='password' placeholder='password' onChange={handleClickPassword}/>
                 </div>
+                <hr className='underline'/>
             </div>
         </div>
         <>
