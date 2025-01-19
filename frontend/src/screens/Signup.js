@@ -2,6 +2,7 @@ import React, {use, useState} from 'react';
 import {useNavigate} from 'react-router-dom';
 import { Button } from '@chakra-ui/react';
 import { HStack } from '@chakra-ui/react';
+import { User, Lock } from '@phosphor-icons/react';
 
 
 let currUsername = '';
@@ -68,34 +69,47 @@ function Signup() {
     return (
         <>
         {/* <p> Signup </p> */}
-        <div className='container'>
-            <div className='header'>
-                <div className='text'>Sign Up</div>
-                <div className='underline'></div>
+        <div className='bg1'> </div>
+        <div className='white-container'>
+            <div className='title'>
+                <p>sign-up</p>
             </div>
             <div className='inputs'>
                 <div className='input'>
-                    <img src='' alt='' />
-                    <input type='username' placeholder='username' onChange={handleClickUsername}/>
+                    <HStack>
+                    <User className='icon'/> 
+                    <input className='text' type='username' placeholder='username' onChange={handleClickUsername}/>
+                     </HStack>
                 </div>
+                <hr className='underline'/>
+
                 <div className='input'>
-                    <img src='' alt='' />
-                    <input type='password' placeholder='password' onChange={handleClickPassword}/>
+                    <HStack>
+                        <Lock className='icon'/> 
+                        <input className='text' type='password' placeholder='password' onChange={handleClickPassword}/>
+                    </HStack>
                 </div>
+                <hr className='underline'/>
+
                 <div className='input'>
-                    <img src='' alt='' />
-                    <input type='password' placeholder='confirm your password' onChange={handleClickConfirmPassword}/>
+                    <HStack>
+                        <Lock className='icon'/> 
+                        <input className='text' type='password' placeholder='confirm your password' onChange={handleClickConfirmPassword}/>
+                    </HStack>
                 </div>
+                <hr className='underline'/>
+
             </div>
-        </div>
-        <Button onClick={handleClickCreateAccount}> Create Account </Button>
-        {error ? <p> Missing Mandatory Field </p> : <p></p> }
+        
+        <button className='button-div' onClick={handleClickCreateAccount}> Create Account </button>
+        {error ? <p className='other-button' style={{color: 'red'}}> Missing Mandatory Field </p> : <p></p> }
         <HStack>
-            <p>
+            <p className='other-button' style={{color:'#9B9797'}}>
                 Already have an account?
             </p>
-            <Button onClick={handleClickLogin}> Login </Button>
+            <button className='other-button' style={{color:'#0DB1DF'}} onClick={handleClickLogin}> Login </button>
         </HStack>
+        </div>
         </>
     );
 }

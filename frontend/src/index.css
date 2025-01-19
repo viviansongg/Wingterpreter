@@ -11,15 +11,53 @@ body {
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
   display: flex;
-  justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically */
-  text-align: center; /* Centers inline elements like text */
+  justify-content: center; 
+  align-items: center;
+  text-align: center; 
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.bg1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./backgrounds/background1.png');
+  background-size: cover; 
+  background-position: center;
+  z-index: -1;
+}
+
+.bg2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./backgrounds/background2.png');
+  background-size: cover; 
+  background-position: center; 
+  z-index: -1;
+}
+
+.bg3 {
+  position: absolute;
+  top: calc(56/1080*100vh);
+  left: calc(57.5/1920*100vw);
+  width: calc(1805/1920*100vw);
+  height: calc(514/1080*100vh);
+  flex-shrink: 0;
+  background-image: url('./backgrounds/background3.png');
+  background-size: cover; 
+  background-position: center; 
+  z-index: -1;
+}
+
 
 .title {
   width: calc(388/1920*100vw);
@@ -28,7 +66,7 @@ code {
   color: #000;
   text-align: center;
   font-family: "Jersey 15", serif;
-  font-size: calc(140/1920*100vw);
+  font-size: calc(120/1920*100vw);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -47,19 +85,19 @@ code {
   border-radius: 10px;
   background: linear-gradient(87deg, #83E38C -9.05%, #71C5CF 97.61%);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  width: calc(268/1920*100vw);
-  height: calc(83/1080*100vh);
+  width: calc(300/1920*100vw);
+  height: calc(100/1080*100vh);
   flex-shrink: 0;
   color: #000;
   font-family: "Jersey 15", serif;
-  font-size: calc(50/1920*100vw);
+  font-size: calc(45/1920*100vw);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px 0; /* Added margin for spacing */
+  margin-top: 30px;
 }
 
 .other-button {
@@ -69,6 +107,7 @@ code {
   font-weight: 400;
   line-height: normal;
   cursor: pointer;
+  margin-top: 30px;
 }
 
 .underline {
@@ -77,7 +116,7 @@ code {
   width: calc(499.5/1920*100vw);
   height: 0px;
   flex-shrink: 0;
-  margin-top: 10px; /* Added margin to create space */
+  margin-top: 10px; 
 }
 
 .white-container {
@@ -85,10 +124,19 @@ code {
   height: calc(835/1080*100vh);
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centers horizontally */
-  justify-content: center; /* Centers vertically */
-  padding: 0; /* Removed padding to center elements better */
+  align-items: center; 
+  justify-content: center; 
+  padding: 0; 
   border-radius: 29px;
   background: #FFF;
   box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.inputs {
+  margin-top: -20px;
+}
+
+.input {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }

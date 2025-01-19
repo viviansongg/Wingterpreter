@@ -6,6 +6,8 @@ import { HStack } from '@chakra-ui/react';
 import LoginButton from '../components/LoginButton.js';
 import LogoutButton from '../components/LogoutButton.js';
 import { getUsername, getPassword } from './Signup';
+import { User, Lock } from '@phosphor-icons/react';
+
 import '../index.css';
 
 let currUsername = '';
@@ -67,23 +69,28 @@ function Login() {
         {/* <p> Login </p> */}
         {/* <p> {savedUsername} </p> */}
         {/* <p> {savedPassword} </p> */}
+        <div className='bg1'> </div>
         <div className='white-container'>
             <div className='title'>
                 <p>login</p>
             </div>
         {/* <div className='container'> */}
-            <div className='header'>
-                <div className='underline'></div>
-            </div>
             <div className='inputs'>
+                
                 <div className='input'>
-                    <img src='' alt='' />
-                    <input type='username' placeholder='username' onChange={handleClickUsername}/>
+                <HStack>
+                <User className='icon'/>                    
+                <input className='text' type='username' placeholder='username' onChange={handleClickUsername}/>
+                </HStack>
                 </div>
                 <hr className='underline'/>
+
+                
                 <div className='input'>
-                    <img src='' alt='' />
-                    <input type='password' placeholder='password' onChange={handleClickPassword}/>
+                    <HStack>
+                        <Lock className='icon'/> 
+                        <input className='text' type='password' placeholder='password' onChange={handleClickPassword}/>
+                    </HStack>
                 </div>
                 <hr className='underline'/>
             {/* </div> */}
@@ -104,7 +111,7 @@ function Login() {
             <button className='other-button' style={{color:'#0DB1DF'}} onClick={handleClickSignup}> Sign Up</button>
         </HStack>
         </div>
-
+        
         </>
         
     );
