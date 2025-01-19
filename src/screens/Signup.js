@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {use, useState} from 'react';
 import {useNavigate} from 'react-router-dom';
 import { Button } from '@chakra-ui/react';
 import { HStack } from '@chakra-ui/react';
@@ -6,6 +6,7 @@ import { HStack } from '@chakra-ui/react';
 
 let currUsername = '';
 let currPassword = '';
+let currConfirmPassword = '';
 
 export const setUsernameFunc = (user) => {
     currUsername = user;
@@ -13,9 +14,14 @@ export const setUsernameFunc = (user) => {
 export const setPasswordFunc = (pass) => {
     currPassword = pass;
 }
+export const setConfirmPasswordFunc = (confPass) => {
+    currConfirmPassword = confPass;
+}
 
 export const getUsername = () => currUsername;
 export const getPassword = () => currPassword;
+export const getConfirmPassword = () => currConfirmPassword;
+
 
 function Signup() {
 
@@ -23,11 +29,17 @@ function Signup() {
 
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
+
+    const [error, setError] = useState(false);
 
     const handleClickCreateAccount = (e) => {
-        console.log('username: ', username);
-        console.log('password: ', password);
-        navigate('/login');
+        if ((username != '') && (password != '') && (confirmPassword != '')) {
+            navigate('/login');
+        }
+        else {
+            setError(true);
+        }
     }
 
     const handleClickUsername = (e) => {
@@ -38,6 +50,10 @@ function Signup() {
         setPassword(e.target.value);
         setPasswordFunc(e.target.value);
     }
+    const handleClickConfirmPassword = (e) => {
+        setConfirmPassword(e.target.value);
+        setConfirmPasswordFunc(e.target.value);
+    }
 
     const handleClickLogin = (e) => {
         navigate('/login');
@@ -45,6 +61,8 @@ function Signup() {
         setUsernameFunc('');
         setPassword('');
         setPasswordFunc('');
+        setConfirmPassword('');
+        setConfirmPasswordFunc('');
     }
 
     return (
@@ -64,9 +82,14 @@ function Signup() {
                     <img src='' alt='' />
                     <input type='password' placeholder='password' onChange={handleClickPassword}/>
                 </div>
+                <div className='input'>
+                    <img src='' alt='' />
+                    <input type='password' placeholder='confirm your password' onChange={handleClickConfirmPassword}/>
+                </div>
             </div>
         </div>
         <Button onClick={handleClickCreateAccount}> Create Account </Button>
+        {error ? <p> Missing Mandatory Field </p> : <p></p> }
         <HStack>
             <p>
                 Already have an account?

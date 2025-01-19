@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Jersey+15&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Inconsolata:wght@200..900&family=Jersey+15&display=swap');
 
 body {
   margin: 0;
@@ -51,7 +51,7 @@ code {
 
 .other-button {
   /* color: #0DB1DF; */
-  font-family: "Inclusive Sans";
+  font-family: "Inclusive Sans", serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
@@ -64,4 +64,8 @@ code {
   width: 499.5px;
   height: 0px;
   flex-shrink: 0;
+}
+
+.error {
+
 }
