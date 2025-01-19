@@ -250,3 +250,8 @@ code {
   height: calc(408/1080*100vh);
   flex-shrink: 0;
 }
+
+#board {
+  /* background-color: skyblue; */
+  background-image: url("./images/flappybirdbg.png");
+}
