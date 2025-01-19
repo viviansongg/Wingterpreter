@@ -199,13 +199,44 @@ code {
   display: flex;
   align-items: center; 
   justify-content: center;
-  background-color: #9B9797;
+  background-color: #000;
   top: calc(619 / 1080 * 100vh);
   left: calc(57.5 / 1920 * 100vw);
   width: calc(713/1920*100vw);
   height: calc(408/1080*100vh);
   flex-shrink: 0;
 }
+
+.alpha-div1 {
+  position: absolute;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  background-color: #6B6B6B;
+  border-radius: 27px;
+  border: 1px solid #FFF;
+  top: calc(674 / 1080 * 100vh);
+  left: calc(250 / 1920 * 100vw);
+  width: calc(329/1920*100vw);
+  height: calc(297/1080*100vh);
+  flex-shrink: 0;
+}
+
+.alpha-char {
+  position: absolute;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  background-color: #6B6B6B;
+  border-radius: 27px;
+  border: 1px solid #FFF;
+  top: calc(674 / 1080 * 100vh);
+  left: calc(250 / 1920 * 100vw);
+  width: calc(100/1920*100vw);
+  height: calc(100/1080*100vh);
+  flex-shrink: 0;
+}
+
 
 .screen-div {
   position: absolute;

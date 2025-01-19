@@ -19,7 +19,7 @@ function GameMode() {
     const [count, setCount] = useState(0);
 
     const handleClickGameover = (e) => {
-        navigate('/mode');
+        navigate('/gameover');
     }
 
     const handleClickKill = (e) => {
@@ -40,6 +40,7 @@ function GameMode() {
         <div className='plainbg'></div>
         <div className='game-div'></div>
         <div className='alpha-div'></div>
+        <div className='alpha-div1'></div>
         <div className='screen-div'></div>
 
         {/* <p> Game Mode </p> */}
