@@ -69,6 +69,9 @@ function GameMode() {
         //     setHeart3(false);
         // }
     }
+    const handleClickCorrect = (e) => {
+        setCorrect(1);
+    }
 
     return (
         <>
@@ -109,7 +112,7 @@ function GameMode() {
         {/* <Button onClick={handleClickGameover}>Game Over</Button> */}
         {/* <Button onClick={handleClickKill}>Kill</Button> */}
         
-        
+        {<button style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', flexshrink: '0' }} onClick={handleClickCorrect}> </button>}
             
         </>
     );
