@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Wingterpreter is an interactive game that helps users practice American Sign Language (ASL) through a unique and engaging adaptation of Flappy Bird. The game leverages computer vision and machine learning to recognize hand gestures as input, allowing players to control the bird by signing ASL letters correctly.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- 🎮 Sign to Play – Control the bird’s movement by signing ASL letters.
+- 🔍 Real-Time Gesture Recognition – Uses a machine learning model to detect hand signs via computer vision.
+- 🔠 Randomized Letter Challenges – Players are presented with two randomly generated ASL letters, each corresponding to either an upward or downward movement.
+- ✅ Accuracy-Based Movement – If the correct ASL letter is signed, the bird moves accordingly; otherwise, no movement occurs.
+- 📈 Engaging Learning Experience – Reinforces ASL letter recognition through a gamified approach.
 
-### `npm start`
+# Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Python – Core game and machine learning logic
+- HTML, CSS, JavaScript, React, Tailwindcss, Chakra UI, Auth0
+ 
+# How It Works
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. The game displays two random ASL letters on the screen.
+2. One letter corresponds to moving up, the other to moving down.
+3. The player signs the correct letter using their hand.
+4. The computer vision model detects and verifies the sign.
+5. If correct, the bird moves in the intended direction; if incorrect, the bird stays in place.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Future Improvements
