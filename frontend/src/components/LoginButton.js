@@ -35,19 +35,9 @@ const LoginButton = () => {
                     }}>
                     Log In
                 </button>
-                {error ? <p> Incorrect Username or Password</p> : <p></p> }
+                {error ? <p className='other-button' style={{color: 'red'}}> Incorrect Username or Password</p> : <p></p> }
             </>
         )
-        
-        
-
-
-
-        // {(inputUsername === savedUsername) && (inputPassword === savedPassword) ? 
-        //              :
-        //             <p> Incorrect Username or Password</p>
-        //             }
-        
     )
 }
 

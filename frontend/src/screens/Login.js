@@ -39,11 +39,18 @@ function Login() {
     const [inputUsername, setInputUsername] = useState('');
     const [inputPassword, setInputPassword] = useState('');
 
-    void inputUsername;
-    void inputPassword;
+
+
+    const [error, setError] = useState(false);
+    
 
     const handleClickLogin = (e) => {
-        navigate('/tutorial');
+        if ((savedUsername === inputUsername) && (savedPassword === inputPassword)) {
+            navigate('/tutorial');
+        }
+        else {
+            setError(true);
+        }
     }
 
     const handleClickUsername = (e) => {
@@ -97,15 +104,11 @@ function Login() {
                 <hr className='underline'/>
             {/* </div> */}
         </div>
-        <>
-                <main className='column'>
-                <LoginButton/>
-                <LogoutButton/>
-                </main>
-        </>
         
         
-        {/* <Button onClick={handleClickLogin}> Login </Button> */}
+        <button className='button-div' onClick={handleClickLogin}> Log In </button>
+        {error ? <p className='other-button' style={{color: 'red'}}> Incorrect Username or Password</p> : <p></p> }
+
         <HStack>
             <p className='other-button' style={{color:'#9B9797'}}>
                 Don't have an account?
