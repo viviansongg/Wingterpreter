@@ -26,7 +26,7 @@ const LiveFeed = () => {
         <img
           src={`data:image/jpeg;base64,${frame}`}
           alt="Live Feed"
-          style={{ width: 640, height: 480 }}
+          style={{ width: 640/2, height: 480/2 }}
         />
       )}
     </div>
