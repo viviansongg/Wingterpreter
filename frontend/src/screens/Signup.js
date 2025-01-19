@@ -3,6 +3,7 @@ import {useNavigate} from 'react-router-dom';
 import { Button } from '@chakra-ui/react';
 import { HStack } from '@chakra-ui/react';
 import { User, Lock } from '@phosphor-icons/react';
+import logo from '../images/logo.png'
 
 
 let currUsername = '';
@@ -69,6 +70,7 @@ function Signup() {
     return (
         <>
         {/* <p> Signup </p> */}
+        <img className='corner-logo' src={logo} alt=''></img>
         <div className='bg1'> </div>
         <div className='white-container'>
             <div className='title'>

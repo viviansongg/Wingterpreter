@@ -140,3 +140,12 @@ code {
   margin-top: 20px;
   margin-bottom: 10px;
 }
+
+.corner-logo {
+  position: absolute;
+  top: calc(53/1080*100vh);  
+  right: calc(111/1920*100vw);  
+  width: calc(289/1920*100vw);
+  height: auto;
+  flex-shrink: 0;
+}

@@ -9,6 +9,7 @@ import { getUsername, getPassword } from './Signup';
 import { User, Lock } from '@phosphor-icons/react';
 
 import '../index.css';
+import logo from '../images/logo.png'
 
 let currUsername = '';
 let currPassword = '';
@@ -69,6 +70,7 @@ function Login() {
         {/* <p> Login </p> */}
         {/* <p> {savedUsername} </p> */}
         {/* <p> {savedPassword} </p> */}
+        <img className='corner-logo' src={logo} alt=''></img>
         <div className='bg1'> </div>
         <div className='white-container'>
             <div className='title'>
