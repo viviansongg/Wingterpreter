@@ -4,7 +4,9 @@ import Start from './Start';
 import { Button } from '@chakra-ui/react';
 import { Heart, HeartBreak } from '@phosphor-icons/react';
 import { HStack } from '@chakra-ui/react';
-import logo from '../images/logo.png'
+import logo from '../images/logo.png';
+import LiveFeed from "../components/LiveFeed";
+
 
 // import { Permutation } from './Permutations';
 
@@ -81,7 +83,9 @@ function GameMode() {
         </div>
         <div className='alpha-div'></div>
         <div className='alpha-div1'></div>
-        <div className='screen-div'></div>
+        <div className='screen-div'>
+            <LiveFeed />
+        </div>
         <div className='uparrow'>
             <p className='circle' style={{top: 'calc(20/1080*100vh)', background:'#98DC55'}}> {up} </p>
         </div>
