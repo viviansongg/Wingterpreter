@@ -27,9 +27,9 @@ function Mode() {
     return (
         <>
         <p> Mode </p>
-        <Button onClick={handleClickLearn}> Learn </Button>
-        <Button onClick={handleClickGame}> Game </Button>
-        <Button onClick={handleClickStats}> Stats </Button>
+        <button className='button-div' onClick={handleClickLearn}> Learn </button>
+        <button className='button-div' onClick={handleClickGame}> Game </button>
+        <button className='button-div' onClick={handleClickStats}> Stats </button>
         
         </>
     );
