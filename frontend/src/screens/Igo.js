@@ -1,22 +1,11 @@
-import {useNavigate} from 'react-router-dom';
-import React, {useState} from 'react';
+// may need to use "use client";
 
-function Igo() {
+import LiveFeed from "../components/LiveFeed";
 
-    const navigate = useNavigate();
-
-    const handleClickPlayAgain = (e) => {
-        navigate('/mode');
-    }
-
-    return (
-        <>
-        {/* <div className='plainbg'> </div> */}
-        <div className='bg2'> </div>
-            <p className='title' style={{color: 'white', marginTop: '-20px'}}> game over </p>
-            <button className='button-div' style={{marginLeft: '70px'}} onClick={handleClickPlayAgain}> play again </button>
-        </>
-    );
+export default function Home() {
+  return (
+    <main>
+      <LiveFeed />
+    </main>
+  );
 }
-
-export default Igo;
