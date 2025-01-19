@@ -5,6 +5,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './screens/Login.js';
 import Signup from './screens/Signup.js';
 import Tutorial from './screens/Tutorial.js';
+import Tutorial1 from './screens/Tutorial1';
+import Tutorial2 from './screens/Tutorial2';
+import Tutorial3 from './screens/Tutorial3';
+import Tutorial4 from './screens/Tutorial4';
 import Mode from './screens/Mode.js';
 import Start from './screens/Start.js';
 import LearnMode from './screens/LearnMode.js';
@@ -85,6 +89,26 @@ function App() {
         <Route path="/tutorial" element={
           <>
             <Tutorial />
+          </>
+        }/>
+        <Route path="/tutorial1" element={
+          <>
+            <Tutorial1 />
+          </>
+        }/>
+        <Route path="/tutorial2" element={
+          <>
+            <Tutorial2 />
+          </>
+        }/>
+        <Route path="/tutorial3" element={
+          <>
+            <Tutorial3 />
+          </>
+        }/>
+        <Route path="/tutorial4" element={
+          <>
+            <Tutorial4 />
           </>
         }/>
         <Route path="/mode" element={

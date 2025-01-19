@@ -3,22 +3,22 @@ import {useNavigate} from 'react-router-dom';
 import { Button } from '@chakra-ui/react';
 
 
-function Tutorial() {
+function Tutorial3() {
 
     const navigate = useNavigate();
 
     const [skipClick, setSkipClick] = useState();
 
-    const handleClickBegin = (e) => {
-        navigate('/tutorial1');
+    const handleClickNext = (e) => {
+        navigate('/tutorial4');
     }
 
     return (
         <>
-        <p> Tutorial </p>
-        <Button onClick={handleClickBegin}> Begin </Button>
+        <p> Tutorial3 </p>
+        <Button onClick={handleClickNext}> Next </Button>
         </>
     );
 }
 
-export default Tutorial;
+export default Tutorial3;

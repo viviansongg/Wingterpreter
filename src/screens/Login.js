@@ -6,7 +6,7 @@ import { HStack } from '@chakra-ui/react';
 import LoginButton from '../components/LoginButton.js';
 import LogoutButton from '../components/LogoutButton.js';
 import { getUsername, getPassword } from './Signup';
-
+import '../index.css';
 
 let currUsername = '';
 let currPassword = '';
@@ -67,6 +67,9 @@ function Login() {
         {/* <p> Login </p> */}
         {/* <p> {savedUsername} </p> */}
         {/* <p> {savedPassword} </p> */}
+        <div className='title'>
+            <p>login</p>
+        </div>
         <div className='container'>
             <div className='header'>
                 <div className='text'>Login</div>
@@ -86,7 +89,7 @@ function Login() {
         <>
                 <main className='column'>
                 <LoginButton/>
-                {/* <LogoutButton/> */}
+                <LogoutButton/>
                 </main>
         </>
         
