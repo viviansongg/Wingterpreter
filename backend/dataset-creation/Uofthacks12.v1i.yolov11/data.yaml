@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 5
+names: ['Dsign', 'Hsign', 'Ksign', 'Lsign', 'Ysign']
+
+roboflow:
+  workspace: donttaptest
+  project: uofthacks12
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/donttaptest/uofthacks12/dataset/1
