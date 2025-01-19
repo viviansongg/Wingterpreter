@@ -67,10 +67,11 @@ function Login() {
         {/* <p> Login </p> */}
         {/* <p> {savedUsername} </p> */}
         {/* <p> {savedPassword} </p> */}
-        <div className='title'>
-            <p>login</p>
-        </div>
-        <div className='container'>
+        <div className='white-container'>
+            <div className='title'>
+                <p>login</p>
+            </div>
+        {/* <div className='container'> */}
             <div className='header'>
                 <div className='underline'></div>
             </div>
@@ -85,7 +86,7 @@ function Login() {
                     <input type='password' placeholder='password' onChange={handleClickPassword}/>
                 </div>
                 <hr className='underline'/>
-            </div>
+            {/* </div> */}
         </div>
         <>
                 <main className='column'>
@@ -102,6 +103,8 @@ function Login() {
             </p>
             <button className='other-button' style={{color:'#0DB1DF'}} onClick={handleClickSignup}> Sign Up</button>
         </HStack>
+        </div>
+
         </>
         
     );
