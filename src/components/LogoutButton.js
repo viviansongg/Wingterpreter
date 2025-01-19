@@ -6,7 +6,7 @@ const LogoutButton = () => {
     return (
         isAuthenticated && (
             <button onClick={() => logout()}>
-                Sign Out
+                Log Out
             </button>
         ) 
     )

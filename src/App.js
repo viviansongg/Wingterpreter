@@ -12,10 +12,25 @@ import GameMode from './screens/GameMode.js';
 import Stats from './screens/Stats.js';
 import GameOver from './screens/GameOver.js';
 import { Provider } from './components/ui/provider.jsx';
-import LoginButton from './components/LoginButton.js';
-import LogoutButton from './components/LogoutButton.js';
+
+import React, { useState, useEffect } from 'react';
+
 
 function App() {
+
+  const [data, setData] = useState([{}]);
+
+  // useEffect(() => {
+  //   fetch('/').then(
+  //     res => res.json()
+  //   ).then(
+  //     data => {
+  //       setData(data)
+  //       console.log(data)
+  //     }
+  //   )
+  // }, [])
+
   return (
     // <div className="App">
     //   <header className="App-header">
@@ -33,12 +48,80 @@ function App() {
     //     </a>
     //   </header>
     // </div>
+    
+
     // <>
-    <main className='column'>
-      <h1> Auth0 Login</h1>
-      <LoginButton/>
-      <LogoutButton/>
-    </main>
+    // <div>
+    //   {(typeof data.members === 'undefined') ? (
+    //     <p>Loading...</p>
+    //   ): (
+    //     data.members.map((member, i) => (
+    //       <p key={i}>{member}</p>
+    //     ))
+    //   )}
+    // </div>
+
+    <Provider>
+    {/* <Component {...pageProps} /> */}
+    <Router>
+      {/* <Taskbar /> */}
+      <Routes>
+        <Route path="/" element={
+          <>
+            <Signup />
+          </>
+        }/>
+        <Route path="/login" element={
+          <>
+            <Login />
+          {/* <div className='snipeitTableDiv'>
+            <VerticalLayout style={{ justifyContent: 'center' }}>
+              <Toggle/>
+              <SnipeitTablePage />
+            </VerticalLayout>
+          </div> */}
+          </>
+        }/>
+        <Route path="/tutorial" element={
+          <>
+            <Tutorial />
+          </>
+        }/>
+        <Route path="/mode" element={
+          <>
+            <Mode />
+          </>
+        }/>
+        <Route path="/start" element={
+          <>
+            <Start />
+          </>
+        }/>
+        <Route path="/learnmode" element={
+          <>
+            <LearnMode />
+          </>
+        }/>
+        <Route path="/gamemode" element={
+          <>
+            <GameMode />
+          </>
+        }/>
+        <Route path="/stats" element={
+          <>
+            <Stats />
+          </>
+        }/>
+        <Route path="/gameover" element={
+          <>
+            <GameOver />
+          </>
+        }/>
+      </Routes>
+    </Router>
+  </Provider>
+    
+   
    
     // </>
   );
