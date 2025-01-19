@@ -65,7 +65,7 @@ code {
   width: 100%;
   height: 100%;
   flex-shrink: 0;
-  background-color: #DFF7FB;
+  background-color: white;
   background-size: cover; 
   background-position: center;
   z-index: -1;
@@ -222,7 +222,7 @@ code {
   display: flex;
   align-items: center; 
   justify-content: center;
-  background-color: #9B9797;
+  background-color: #DFF7FB;
   top: calc(56 / 1080 * 100vh);
   left: calc(57.5 / 1920 * 100vw);
   width: calc(1805/1920*100vw);

@@ -49,7 +49,7 @@ function GameMode() {
     const [up, setUp] = useState(permutations[randomInt][0]);
     const [down, setDown] = useState(permutations[randomInt][1]);
 
-    const [correct, setCorrect] = useState(false);
+    const [correct, setCorrect] = useState(0);
 
     const handleClickGameover = (e) => {
         navigate('/gameover');
@@ -75,7 +75,10 @@ function GameMode() {
 
 
         <div className='plainbg'></div>
-        <div className='game-div'></div>
+        <div className='game-div'>
+        {correct < 0 ? <p className='title'> Incorrrect</p> : <p></p>}
+        {correct > 0 ? <p className='title'> Correct</p> : <p></p>}
+        </div>
         <div className='alpha-div'></div>
         <div className='alpha-div1'></div>
         <div className='screen-div'></div>
@@ -99,8 +102,11 @@ function GameMode() {
         {/* <Start/> */}
         <img className='corner-logo' src={logo} alt=''></img>
         
-        <Button onClick={handleClickGameover}>Game Over</Button>
+        {/* <Button onClick={handleClickGameover}>Game Over</Button> */}
         {/* <Button onClick={handleClickKill}>Kill</Button> */}
+        
+        
+            
         </>
     );
 }
