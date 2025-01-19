@@ -96,10 +96,10 @@ function Login() {
         
         {/* <Button onClick={handleClickLogin}> Login </Button> */}
         <HStack>
-            <p>
+            <p className='other-button' style={{color:'#9B9797'}}>
                 Don't have an account?
             </p>
-            <Button onClick={handleClickSignup}> Sign Up</Button>
+            <button className='other-button' style={{color:'#0DB1DF'}} onClick={handleClickSignup}> Sign Up</button>
         </HStack>
         </>
         

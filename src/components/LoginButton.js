@@ -29,7 +29,7 @@ const LoginButton = () => {
     return (
         !isAuthenticated &&
         (   <>
-                <button onClick={() => {
+                <button className='button-div' onClick={() => {
                     // loginWithRedirect()
                     handleLogin();
                     }}>
